@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>
+    {{#unless template.isHomepage}}
+      :
+    {{/unless}}
+    {{options.title}}
+  </title>
+  <link rel="stylesheet" href="kss-assets/style.css" />
+  {{{styles}}}
+</head>
+<body class="Grid">
+  <header class="Grid-cell u-sizeFull" role="banner">
+    <h1 style="padding:16px">{{options.title}}</h1>
+  </header>
+  <nav class="Grid-cell u-sm-sizeFull u-md-size2of8 u-lg-size1of6">
+    <ol start="0">
+      <li>
+        <a class="u-inlineBlock u-linkClean" href="./" style="padding:8px 16px">Overview</a>
+      </li>
+      {{#each menu}}
+        <li>
+          <span class="u-inlineBlock" style="padding:8px 16px">{{header}}</a>
+          {{!-- {{#if isActive}} --}}
+            {{#if children}}
+              <ol>
+              {{#each children}}
+                <li>
+                  <a class="u-inlineBlock u-linkClean" href="item-{{referenceURI}}.html" style="padding:8px 16px">{{header}}</a>
+                </li>
+              {{/each}}
+              </ol>
+            {{/if}}
+          {{!-- {{/if}} --}}
+        </li>
+      {{/each}}
+    </ol>
+  </nav>
+  <main class="Grid-cell u-sm-sizeFull u-md-size5of8 u-lg-size4of6" id="content" role="main">
+    {{#if template.isHomepage}}
+      {{#if homepage}}
+        {{{homepage}}}
+      {{/if}}
+      {{else}}
+        {{#each sections}}
+          <{{#if @first}}header{{else}}section{{/if}} id="{{referenceURI}}">
+            <h{{depth}}>
+              <a class="u-linkClean" href="#{{referenceURI}}">{{header}}</a>
+            </h{{depth}}>
+
+            {{#if example}}
+              <p>
+                {{#unless @root.template.isItem}}
+                  <a class="u-linkClean" href="item-{{referenceURI}}.html" target="_blank">Open in new window</a>
+                {{/unless}}
+              </p>
+            {{/if}}
+
+            {{#if description}}
+              <p class="hi">
+                {{{description}}}
+              </p>
+            {{/if}}
+
+            {{#if parameters}}
+              <div>Parameters</div>
+              <ul>
+                {{#each parameters}}
+                  <li>
+                    <div><code>{{name}}</code></div>
+                    <div>
+                      {{{description}}}
+                      {{#if defaultValue}}
+                        <div>
+                          Defaults to: <code>{{defaultValue}}</code>
+                        </div>
+                      {{/if}}
+                    </div>
+                  </li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </div>
+
+          {{#if example}}
+            <dl class="Example">
+              <dd class="Example-result">
+                {{{markup}}}
+              </dd>
+              <dt class="Example-source">
+                <pre class="prettyprint lang-html">{{markup}}</pre>
+              </dt>
+            </dl>
+            {{#each modifiers}}
+              <h3><code>{{name}}</code></h3>
+              <p>{{{description}}}</p>
+              <dl class="Example">
+                <dd class="Example-result">
+                  {{{markup}}}
+                </dd>
+                <dt class="Example-source">
+                  <pre class="prettyprint lang-html">{{markup}}</pre>
+                </dt>
+              </dl>
+            {{/each}}
+          {{/if}}
+
+        </{{#if @first}}header{{else}}section{{/if}}>
+      {{/each}}
+    {{/if}}
+  </main>
+  <footer class="Grid u-sizeFull" role="contentinfo">
+    MIT
+  </footer>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="kss-assets/kss.js"></script>
+  {{{scripts}}}
+</body>
+</html>

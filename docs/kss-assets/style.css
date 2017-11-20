@@ -1,0 +1,36 @@
+.Example {
+  border: thin #f6f8fa solid;
+  border-radius: 4px;
+  margin: 24px 0;
+  overflow: hidden;
+  padding-top: 32px;
+  position: relative;
+}
+
+.Example::before {
+  color: #8d9199;
+  content: "Example";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+  left: 16px;
+}
+
+.Example-result {
+  padding: 16px;
+  position: relative;
+}
+
+.Example-source {
+  background-color: #f6f8fa;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 16px;
+}
+
+pre.prettyprint {
+  border: none !important;
+}

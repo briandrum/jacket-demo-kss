@@ -1,0 +1,16 @@
+/**
+ * Layout
+ *
+ * A SUIT CSS collection of utility classes for low-level CSS layout traits.
+ *
+ * Markup:
+ * <div class="{{modifier_class}}">Pack my box with five dozen liquor jugs.</div>
+ *
+ * .u-cf - Contain floats (micro clearfix).
+ * .u-nbfc - Create a new block formatting context.
+ * .u-nbfcAlt - Create a new block formatting context (alternative technique).
+ * .u-floatLeft - Float left.
+ * .u-floatRight - Float right.
+ *
+ * Styleguide Utilities.Layout
+ */

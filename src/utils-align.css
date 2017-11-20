@@ -1,0 +1,16 @@
+/**
+ * Align
+ *
+ * SUIT CSS utility classes for vertically aligning elements.
+ *
+ * Markup:
+ * <img alt="" class="{{modifier_class}}" height="100" src="http://www.gifpng.com/100/aaaaaa?text=+" width="100" />
+ * Pack my box with five dozen liquor jugs.
+ *
+ * .u-alignBaseline - Vertically align to baseline.
+ * .u-alignBottom   - Vertically align to bottom.
+ * .u-alignMiddle   - Vertically align to middle.
+ * .u-alignTop      - Vertically align to top.
+ *
+ * Styleguide Utilities.Align
+ */

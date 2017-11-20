@@ -1,0 +1,23 @@
+/**
+ * Grid
+ *
+ * A CSS grid component. The grid makes use of flexbox and box-sizing to provide
+ * features that float-based layouts cannot.
+ *
+ * Markup:
+ * <div class="Grid {{modifier_class}}">
+ *   <div class="Grid-cell u-size1of4"><img alt="" height="100" src="http://www.gifpng.com/100/aaaaaa?text=+" width="100" /></div>
+ *   <div class="Grid-cell u-size1of4"><img alt="" height="300" src="http://www.gifpng.com/300/aaaaaa?text=+" width="100" /></div>
+ *   <div class="Grid-cell u-size1of4"><img alt="" height="200" src="http://www.gifpng.com/200/aaaaaa?text=+" width="100" /></div>
+ * </div>
+ *
+ * .Grid--alignCenter - center-align all child Grid-cell
+ * .Grid--alignRight  - right-align all child Grid-cell
+ * .Grid--alignMiddle - middle-align all child Grid-cell
+ * .Grid--alignBottom - bottom-align all child Grid-cell
+ * .Grid--fit         - evenly distribute space amongst all child Grid-cell
+ * .Grid--equalHeight - all child Grid-cell match height of the tallest
+ * .Grid--withGutter  - adds a gutter between cells
+ *
+ * Styleguide Components.Grid
+ */

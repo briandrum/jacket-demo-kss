@@ -1,0 +1,19 @@
+/**
+ * Position
+ *
+ * SUIT CSS utility classes for positioning.
+ *
+ * Markup:
+ * <div class="{{modifier_class}}">Pack my box with five dozen liquor jugs.</div>
+ *
+ * .u-posAbsolute - Absolutely position an element.
+ * .u-posAbsoluteCenter - Absolutely position and centre an element.
+ * .u-posFit - Fit an element to the dimensions of its parent
+ * .u-posFullScreen - Fixes an element over the viewport
+ * .u-posFixed - Fixed position an element.
+ * .u-posFixedCenter - Fix an element in the centre of the viewport
+ * .u-posRelative - Relatively position an element.
+ * .u-posStatic - Static position an element.
+ *
+ * Styleguide Utilities.Position
+ */

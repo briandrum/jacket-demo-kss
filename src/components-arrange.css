@@ -1,0 +1,25 @@
+/**
+ * Arrange
+ *
+ * A SUIT CSS component for horizontally and vertically arranging a single row
+ * of cells. Includes modifier classes for equal-width cells and gutter-
+ * separated cells. Makes use of CSS table layout.
+ *
+ * Markup:
+ * <div class="Arrange {{modifier_class}}">
+ *   <div class="Arrange-sizeFit">
+ *     <img alt="" height="100" src="http://www.gifpng.com/100/aaaaaa?text=+" width="100" />
+ *   </div>
+ *   <div class="Arrange-sizeFill">
+ *     Nicolas Gallagher @necolas
+ *     …
+ *   </div>
+ * </div>
+ *
+ * .Arrange--middle     - The modifier class for middle-aligned cells
+ * .Arrange--bottom     - The modifier class for bottom-aligned cells
+ * .Arrange--equal      - The modifier class for equal-width cells
+ * .Arrange--withGutter - The modifier class for adding a gutter between cells.
+ *
+ * Styleguide Components.Arrange
+ */

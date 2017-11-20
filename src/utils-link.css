@@ -1,0 +1,14 @@
+/**
+ * Link
+ *
+ * CSS link utilities
+ *
+ * Markup:
+ * <a class="{{modifier_class}}" href="#0">Link</a>
+ *
+ * .u-linkBlock - Block-level link with no text-decoration for any state.
+ * .u-linkClean - A link without no text-decoration for any state.
+ * .u-linkComplex - Limit a link's interactive text-decoration underline to a sub-section of the link text.
+ *
+ * Styleguide Utilities.Link
+ */

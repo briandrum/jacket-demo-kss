@@ -1,0 +1,8 @@
+{
+  "builder": "../builder",
+  "css": "css/build.css",
+  "destination":  "../docs",
+  "homepage": "index.md",
+  "source": "../src",
+  "title": "Jacket: a theme for SUIT CSS"
+}

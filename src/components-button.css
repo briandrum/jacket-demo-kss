@@ -1,0 +1,14 @@
+/**
+ * Button
+ *
+ * Component CSS for buttons
+ *
+ * Markup:
+ * <a class="Button {{modifier_class}}" href="#0">Anchor</a>
+ * <button class="Button {{modifier_class}}" type="button">Button</button>
+ * <button class="Button {{modifier_class}}" type="submit">Submit</button>
+ *
+ * .Button--primary - Indicates button is the primary action.
+ *
+ * Styleguide Components.Button
+ */
